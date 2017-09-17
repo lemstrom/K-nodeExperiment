@@ -1,2 +1,2 @@
-# K-nodeExperiment
-Testing out k-node algorithm
+# K-means Experiment
+Testing out k-means algorithm
