@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
 #include <iostream>
 #include <cmath>
 
-using std::list;
 using std::cout;
 using std::endl;
 
@@ -25,11 +24,15 @@ struct Point
 
     double distanceFrom (int refX, int refY)
     {
-        return 0.0;
+        // sqrt ((x_a - x_b)^2 + (y_a - y_b)^2)
+        // sqrt() takes its arguments as doubles
+        return sqrt(static_cast <double> ((refX - x) * (refX - x)) + static_cast <double> ((refY - y) * (refY - y)));
     }
 };
 
 int main ()
 {
+    Point a = {0,0};
+    Point b = {5,5};
     return 0;
 }
